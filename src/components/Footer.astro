@@ -1,35 +1,72 @@
-<footer class="main-footer">
-    <div class="logo">
-        COGIP
+<footer class="main-footer container">
+    <div>
+        <div class="logo">
+            COGIP
+        </div>
     </div>
 
-    <div class="footer__contact">
-        <ul class="footer__contact__list">
-            <li class="footer__contact__list__item"><address>Square des Martyrs, 6000 Charleroi</address></li>
-            <li class="footer__contact__list__item">(123) 456-7890</li>
-            <li class="footer__contact__list__item">(123) 456-7890</li>
-            <li class="footer__contact__list__item">
+    <div class="main-footer__contact">
+        <ul class="main-footer__contact__list">
+            <li class="main-footer__contact__list__item"><address>Square des Martyrs, 6000 Charleroi</address></li>
+            <li class="main-footer__contact__list__item">(123) 456-7890</li>
+            <li class="main-footer__contact__list__item">(123) 456-7890</li>
+            <li class="main-footer__contact__list__item">
                 Social media 
-                <ul class="footer__contact__social-media">
-                    <li class="footer__contact__social-media__item"><a href="https://facebook.com"></a></li>
+                <ul class="main-footer__contact__social-media">
+                    <li class="main-footer__contact__social-media__item"><a href="https://facebook.com"></a></li>
                     <li
-                    class="footer__contact__social-media__item"><a href="https://twitter.com"></a></li>
-                    <li class="footer__contact__social-media__item"><a href="https://linkedin.com"></a></li>
-                    <li class="footer__contact__social-media__item"><a href="https://youtube.com"></a></li>
-                    <li class="footer__contact__social-media__item"><a href="https://instagram.com"></a></li>
+                    class="main-footer__contact__social-media__item"><a href="https://twitter.com"></a></li>
+                    <li class="main-footer__contact__social-media__item"><a href="https://linkedin.com"></a></li>
+                    <li class="main-footer__contact__social-media__item"><a href="https://youtube.com"></a></li>
+                    <li class="main-footer__contact__social-media__item"><a href="https://instagram.com"></a></li>
                 </ul>
             </li>
         </ul>
     </div>
 
-    <nav class="footer-nav">
-        <ul class="footer__nav__menu">
-            <li class="footer__nav__menu__item"><a href="#">Home</a></li>
-            <li class="footer__nav__menu__item"><a href="#">Invoices</a></li>
-            <li class="footer__nav__menu__item"><a href="#">Companies</a></li>
-            <li class="footer__nav__menu__item"><a href="#">Contacts</a></li>
-            <li class="footer__nav__menu__item"><a href="#">Privacy Policy</a></li>
+    <nav class="main-footer__nav">
+        <ul class="main-footer__nav__menu">
+            <li class="main-footer__nav__menu__item"><a href="#">Home</a></li>
+            <li class="main-footer__nav__menu__item"><a href="#">Invoices</a></li>
+            <li class="main-footer__nav__menu__item"><a href="#">Companies</a></li>
+            <li class="main-footer__nav__menu__item"><a href="#">Contacts</a></li>
+            <li class="main-footer__nav__menu__item"><a href="#">Privacy Policy</a></li>
         </ul>
     </nav>
 
 </footer>
+
+<style>
+    .main-footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        font-size: .875rem;
+        color: #737373;
+    }
+
+    .main-footer .logo {
+        color: #434138;
+        border: 5px solid var(--primary);
+        width: max-content;
+        padding: 3px;
+    }
+
+    .main-footer__nav,
+    .main-footer__nav__menu {
+        display: flex;
+    }
+
+    .main-footer__nav {
+        grid-column: span 2;
+    }
+
+    .main-footer__nav__menu{
+        gap: 59px;
+    }
+
+    .main-footer__nav__menu__item a{
+        color: #737373;
+        text-transform: uppercase;
+    }
+</style>
