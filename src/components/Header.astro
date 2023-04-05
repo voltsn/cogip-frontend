@@ -1,0 +1,90 @@
+---
+
+---
+<header class="main-header">
+    <div class="container">
+        <div class="logo">COGIP</div>
+        <nav id="main-nav" class="main-nav">
+            <ul class="main-nav__menu">
+                <li class="main-nav__menu__item"><a href="#">Home</a></li>
+                <li class="main-nav__menu__item"><a href="#">Invoices</a></li>
+                <li class="main-nav__menu__item"><a href="#">Companies</a></li>
+                <li class="main-nav__menu__item"><a href="#">Contacts</a></li>
+            </ul>
+    
+            <ul class="main-nav__menu">
+                <li class="main-nav__menu__item highlighted-link"><a href="#">Sign Up</a></li>
+                <li class="main-nav__menu__item"><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" aria-controls="main-nav">
+            <span class="hamburger__top-line"></span>
+            <span class="hamburger__middle-line"></span>
+            <span class="hamburger__bottom-line"></span>
+        </button>
+    </div>
+
+    <slot />
+
+    <div class="header__rectangle">
+        <img aria-hidden="true" src="rectangle.svg" alt="rectangle" />
+    </div>
+</header>
+
+<style>
+    .main-header{
+        background-color: var(--primary);
+        padding: 5.75rem 0 0;
+        position: relative;
+    }
+
+    .main-header .logo {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .main-header > .container,
+    .main-nav{
+        display: flex;
+    }
+
+    .main-header > .container{
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3.125rem;
+    }
+
+    .main-nav {
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    .main-nav__menu {
+        display: inherit;
+        gap: 2em;
+        justify-self: center;
+        margin-left: 4.6875rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .main-nav__menu__item {
+        padding: .5em;
+    }
+
+    .main-nav__menu__item > a:active {
+        border: 1px solid #000;
+    }
+
+    .header__rectangle {
+        width: max-content;
+        margin: 0 auto 0 auto;
+        line-height: 0;
+    }   
+
+    .hamburger {
+        align-self: justify-end;
+        display: none;
+    }
+
+</style>
