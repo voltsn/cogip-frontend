@@ -28,6 +28,10 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	:root{
+		--primary: #F9DE4E;
+	}
+
 	html {
 		font-family: inter, sans-serif;
 		box-sizing: border-box;
@@ -46,9 +50,23 @@ const { title } = Astro.props;
 		margin: 0;
 	}
 
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+
+	ul {
+		list-style: none;
+	}
+
 	.container {
 		margin: 0 auto;
-		max-width: 40rem;
+		max-width: 90rem;
 		width: 90%;
+	}
+	
+	.highlighted-link{
+		background-color: #fff;
+		border-radius: .5rem;
 	}
 </style>
